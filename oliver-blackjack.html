@@ -2,19 +2,27 @@
 <html>
   <head>
     <title>blackjack</title>
-    <link rel= stylesheet type="text/css" href="style.css">
+    <link rel= stylesheet type="text/css" href="bootstrap.css">
     <meta charset="utf8">
   </head>
   <body>
-    <section >
-      <form class="form" >
-        <input id="nb" type="number" min="1">
-        <input id="envoyer" type="button" onclick="blackjack()">
+    <section>
+      <form>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="envoyer"> selectionnez un chiffre</label>
+          <div class="col-sm-10">
+        <input class="form-control" id="nb" type="number" min="1">
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        <input class="btn btn-default" id="envoyer" type="button" onclick="blackjack()" value="resultat">
         <span id="result">resultat</span>
       </form>
-      <table>
+      <div class="table-responsive">
+      <table class="table">
         <tr>
-          <th>main utilisateur></th>
+          <th>main utilisateur</th>
           <th>main de l'ordinateur</th>
           <th>vainceur</th>
           <th> parties jouer</th>
@@ -27,6 +35,7 @@
         </tr>
 
       </table>
+    </div>
 <script type="text/javascript" src="oliver-blackjack.js"></script>
 
     </section>
