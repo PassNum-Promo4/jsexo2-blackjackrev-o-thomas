@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>blackjack</title>
+    <link rel= stylesheet type="text/css" href="bootstrap.css">
+    <meta charset="utf8">
+  </head>
+  <body>
+    <section>
+      <form onsubmit="return false;">
+        <div class="form-group">
+
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+        <input class="btn btn-default" id="envoyer" type="button" onclick="serv()" value="resultat">
+        <input class="btn btn-default" id="deck" type="button" onclick="pioche()" value="addition">
+        <input class="btn btn-default" type="button" onclick='window.location.reload(false)' value="nouvelle partie"/>
+      </form>
+      <div class="table-responsive">
+      <table class="table">
+        <tr>
+          <th>main utilisateur</th>
+          <th>main de l'ordinateur</th>
+          <th>vainceur</th>
+
+        </tr>
+        <tr>
+          <td id="userMain"> </td>
+          <td id="cpuRes"> </td>
+          <td id="win"> </td>
+
+        </tr>
+
+      </table>
+    </div>
+<script type="text/javascript" src="oliver-blackjack-exo-2.js"></script>
+
+    </section>
+
+  </body>
+ </html>
